@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(12, 1, 30);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(20, 2, 50);
+            transition: background-color 0.35s ease-in-out;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(155, 155, 238);
+            text-decoration: underline;
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding-top: 80px;
+            /* Add space for the fixed navbar */
+        }
+
+        section {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        section p {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        footer {
+            background: rgb(19, 1, 44);
+            padding-top: 2rem;
+            font-size: 0.9rem;
+            color: white;
+            text-align: center;
+        }
+
+        .footer_container {
+            display: flex;
+            gap: 30rem;
+        }
+
+        .footer_container>div h4 {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer_1 p {
+            margin: 0 0 2rem;
+        }
+
+        footer ul li {
+            margin: 0.7rem;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer_4 {
+            position: relative;
+        }
+
+        .footer_socials {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footr_5 {
+            justify-content: end;
+        }
+
+        pre {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vijay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <h1>Projects:</h1>
+        <section id="project1">
+            <h2>Text to Handwriting(/PNG) Converter</h2>
+            <pre>Project using Java and database as SQl Certainly! Below is a basic description for a Text to Handwriting/PNG Converter using Java with a GUI 
+                and SQL database:
+
+                The Java Text to Handwriting/PNG Converter is a versatile application designed to convert text input into handwritten-style PNG images.
+                This application provides a user-friendly Graphical User Interface (GUI) for seamless interaction, enhancing user experience.
+                
+                Key Features:
+                
+                Text Input:
+                
+                Users can input text directly into the application using a convenient text area within the GUI.
+                
+                Handwriting Font Selection:
+                The application allows users to choose from a variety of pre-loaded handwriting fonts to give a personalized touch to the generated 
+                PNG images.
+                
+                Real-Time Preview:
+                As users input or modify text, the application provides a real-time preview of the handwritten-style output, ensuring the desired look
+                before generating the final PNG image.
+
+                PNG Image Generation:
+                Upon user request, the application converts the entered text into a PNG image using the selected handwriting font. The generated 
+                images can be saved locally for future reference.
+                
+                Database Integration:
+                The application integrates with an SQL database to store and manage user preferences, such as favorite fonts, frequently used phrases,
+                or previous PNG conversions. This feature enhances user convenience and personalization.
+                
+                User Profiles:
+                Users can create profiles within the application, allowing them to save and retrieve their preferred settings and historical conversions.
+                
+                Export and Share:
+                The generated PNG images can be easily exported and shared on various platforms, making it a convenient tool for creating 
+                personalized digital notes, messages, or artistic creations.
+                
+                Secure User Authentication:
+                To protect user data and preferences, the application employs secure user authentication mechanisms when accessing the SQL 
+                database.
+                
+                Customization Options:
+                The application provides additional customization options such as adjusting font size, color, and background to cater to diverse
+                user preferences.
+                
+                Cross-Platform Compatibility:
+                The Java-based design ensures cross-platform compatibility, allowing users to run the application seamlessly on different
+                operating systems.
+                </pre>
+            <p>Github link below:</p><br>
+            <a href="https://github.com/VijayMakkad/Text-to-png-handwriting-converter">Text to Handwriting(/PNG)
+                Converter</a>
+        </section>
+
+        <section id="project2">
+            <h2>Network Usage Tracker</h2>
+            <p>A python project which helps to calculate the amount of packets used per second and stores in the
+                database. This interface has a window in which you can start the calculation of bits/second or stop. It
+                stores the packets per second in mysql database. The packages that have been used are-
+
+                Tkinter PIL Time Socket Psutil In this program we can set a limit for the packets being used. In this
+                program we set a limit of 1MB/sec and whenver the packets exceeds, like when we download any file or
+                watch videos. It will immediately show a message box saying "THE LIMIT HAS BEEN EXCEEDED". Thus letting
+                the user know that the limit has been exceeded.
+
+                NOTE- Copy all the images in a folder and download the code and run the program.</p><br>
+            <p>Github link below:</p><br>
+            <a href="https://github.com/VijayMakkad/Network-Tracker">Network Usage Tracker</a>
+        </section>
+
+        <section id="project3">
+            <h2>Shortest Route-Metro</h2>
+            <p>Finding shortest distance between stations using Dijkstra algorithm in C++ The "Shortest Metro Route
+                Finder Project in C" is a software application designed to help users navigate through a metro or subway
+                system by identifying and providing the shortest route between two specified stations. This project aims
+                to simplify the process of finding the quickest way to travel within a metro network, making it
+                particularly useful for commuters and tourists. It involves the implementation of data structures and
+                algorithms to calculate and display the most efficient route and a user-friendly interface to interact
+                with the system. The primary goal of this project is to enhance the convenience and efficiency of metro
+                travel for users.</p>
+            <br>
+            <p>Github link below:</p><br>
+            <a href="https://github.com/VijayMakkad/Shortest-Distance-of-Metro">Shortest Route-Metro</a>
+        </section>
+
+        <section id="project4">
+            <h2>Hotel Management System</h2>
+            <pre>The C++ Hotel Management System is a robust software solution designed to streamline and automate various operations within a hotel
+                environment.This comprehensive system encompasses key aspects of hotel management, from reservation handling to customer 
+                check-out, providing a centralized platform for efficient administration.
+
+                Key Features:
+                
+                User-friendly Interface:
+                The system boasts an intuitive and user-friendly console interface, making it accessible to hotel staff with varying levels of 
+                technical
+                expertise.
+                
+                Reservation Management:
+                Hotel staff can effortlessly manage room reservations, including booking, modification, and cancellation. The system provides real-time
+                availability updates, ensuring accurate reservation handling.
+                
+                Customer Information Database:
+                The system maintains a centralized database of customer information, including contact details, preferences, and booking history. This
+                facilitates personalized customer service and targeted marketing.
+                
+                Room Allocation and Tracking:
+                Efficient room allocation algorithms ensure optimal occupancy. The system allows staff to track room status, including check-in, 
+                check-out, and cleaning statuses.
+                
+                Billing and Invoicing:
+                The system automates billing processes, calculating charges based on room rates, additional services, and duration of stay. Invoices 
+                are generated and can be printed for customer records.
+                
+                Inventory Management:
+                Hotel resources such as toiletries, linens, and other consumables are tracked through the system. Automatic alerts notify staff when 
+                inventory levels are low, preventing shortages.
+                
+                Employee Management:
+                Staff roles and responsibilities are managed through the system, including access control to sensitive information. Employee 
+                attendance and performance can also be tracked.
+                
+                Reports and Analytics:
+                The system provides comprehensive reporting features, offering insights into occupancy rates, revenue, and other key performance 
+                indicators. These reports aid in decision-making and strategic planning.
+                
+                Security and Data Integrity:
+                Robust security measures, including data encryption and user authentication, are implemented to safeguard sensitive information. 
+                Data integrity checks ensure the reliability of stored data.
+            </pre>
+            <br>
+            <p>Github link below:</p><br>
+            <a href="https://github.com/VijayMakkad/Hotel-management-System">Hotel Management System</a>
+        </section>
+
+        <section id="project5">
+            <h2>Educational_landingpage</h2>
+            <p>The aesthetic appeal of our landing page is crafted with HTML and CSS, ensuring a visually stunning and user-friendly interface. Through thoughtful design, we have created an intuitive navigation system that effortlessly guides users through the educational journey. The responsive layout ensures a seamless experience across various devices, promoting accessibility and inclusivity.
+                
+                As users explore the landing page, they will encounter interactive elements powered by JavaScript. Our carefully curated content is brought to life through animations, quizzes, and dynamic features that enhance user engagement. From captivating sliders showcasing course highlights to interactive progress trackers, JavaScript adds a layer of interactivity that transforms learning into an immersive adventure.
+                
+                The educational landing page serves as a gateway to a diverse range of courses, each presented with rich multimedia content and detailed descriptions. HTML forms facilitate easy enrollment, and JavaScript ensures real-time feedback, creating a responsive and personalized learning environment. Users can track their progress, receive instant quiz results, and interact with instructors through the integrated messaging system.
+                
+                CSS styling contributes to a cohesive branding identity, providing a visually appealing and consistent experience. Customized fonts, color schemes, and layout designs contribute to a user-friendly interface that fosters a positive and memorable learning experience.
+                
+                Whether you're a student eager to explore new subjects or an instructor looking for a platform to share knowledge, our educational landing page is designed to cater to your needs. Embrace the future of online learning with our HTML, CSS, and JavaScript-powered platform, where education meets innovation in a visually stunning and interactive digital landscape. Start your journey with us and unlock a world of possibilities through the power of coding and creativity.</p>
+            <br>
+            <p>Github link below:</p><br>
+            <a href="https://github.com/VijayMakkad/Education_page">Educational_landingpage</a><br><br><br>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html">
+                    <h3>Vijay Makkad's Portfolio</h3>
+                </a>
+            </div>
+
+            <div class="footer_2">
+                <h4>Premalinks</h4>
+                <ul class="premalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footr_5">
+                <div class="footer_4">
+                    <h4>Contact</h4>
+                    <div>
+                        <p>+91 7894205764</p>
+                        <p>vijaymakkad0104@gmail.com</p>
+                        <p>alt: vm2241@srmist.edu.in</p>
+                    </div>
+                    <ul class="footer_socials">
+                        <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/user._.doesnotexisttt/"><i
+                                    class="uil uil-instagram-alt"></i></a></li>
+                        <li><a href="https://github.com/VijayMakkad"><i class="uil uil-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/vijay-makkad-1573681b3/"><i
+                                    class="uil uil-linkedin-alt"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

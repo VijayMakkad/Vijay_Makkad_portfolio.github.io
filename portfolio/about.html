@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(12, 1, 30);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: start;
+        }
+
+        header {
+            background-color: rgb(20, 2, 50);
+            color: white;
+            padding: 1em;
+        }
+
+        .section.h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 300px;
+            transition: .5s ease;
+        }
+
+        .leftsection img:hover {
+            opacity: .5;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .rightsection {
+            font-size: 1rem;
+        }
+
+        .leftsection img {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .heading1 {
+            font-size: 2.5rem;
+            margin: 0 -170px;
+        }
+
+        .intro {
+            margin: 0 -150px;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .text {
+            background-color: rgb(20, 2, 50);
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        .leftsection:hover .middle {
+            opacity: 1;
+        }
+
+        footer {
+            background: rgb(19, 1, 44);
+            padding-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .footer_container {
+            display: flex;
+            gap: 30rem;
+        }
+
+        .footer_container>div h4 {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer_1 p {
+            margin: 0 0 2rem;
+        }
+
+        footer ul li {
+            margin: 0.7rem;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer_4 {
+            position: relative;
+        }
+
+        .footer_socials {
+            display: flex;
+            justify-content: space-around;
+        }
+        .footr_5{
+            justify-content: end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <a href="index.html" style="text-decoration: none; color: white; margin-right: 20px;">Home</a>
+    </header>
+    <section class="firstsection">
+        <div class="leftsection">
+            <img class="image-me" src="./phto.jpg" alt="Vijay Makkad">
+            <div class="middle">
+                <div class="text">Vijay Makkad</div>
+            </div>
+        </div>
+        <div class="rightsection">
+            <span class="heading1">Hello mate!</span>
+            <div class="intro">In the realm of bits and bytes, I navigate the intricate tapestry of code with fervor and precision. Currently enrolled at SRM University, my academic journey finds its roots in the esteemed Sai International Residential School, where my passion for programming began to blossom. Proficient in an array of programming languages such as Java, C, C++, Python, HTML, CSS, and Javascript, my coding repertoire reflects a versatile skill set. Additionally, a touch of C# embellishes my programming canvas.
+                <br><br>
+                My fascination with the elegance of algorithms and the art of problem-solving fuels my keen interest in competitive programming. The intricate dance of Data Structures and Algorithms (DSA) captures my imagination, prompting me to delve into the depths of logical reasoning and computational thinking.
+                <br><br>
+                Beyond the binary realms, I am an architect of projects that manifest in the Project section of my portfolio. These digital creations are a testament to my coding prowess and innovative thinking, each line of code weaving a narrative of problem-solving and creativity.
+                <br><br>
+                Away from the luminous glow of the screen, my interests span the physical and the virtual. Video games transport me to alternate realities, while the thrill of football, the strategic finesse of cricket, and the rhythmic strokes of swimming keep me grounded in the tangible world. A fervent traveler, I find solace in exploring new landscapes, cultures, and cuisines, seeking inspiration from the uncharted.
+                <br><br>
+                My skills extend beyond the boundaries of programming, reaching into the realm of visual storytelling. Proficient in video editing, I've undertaken three internships, honing my craft and blending the technical with the artistic to create compelling narratives.
+                <br><br>
+                For those who wish to connect, my digital footprint awaits – be it through Instagram, email, or the digits on my phone. These channels serve as gateways to a conversation, a collaboration, or perhaps the initiation of a new project. The intersection of passion and proficiency defines my journey, and the odyssey continues to unfold in the ever-evolving landscape of technology and creativity. <br><br><br>
+                For more about me and my projecsts<ul>
+                    <li><a href="https://github.com/VijayMakkad"><i class="uil uil-github"></i> Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/vijay-makkad-1573681b3/"><i
+                        class="uil uil-linkedin-alt"></i> Linkedin</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html">
+                    <h3>Vijay Makkad's Portfolio</h3>
+                </a>
+            </div>
+
+            <div class="footer_2">
+                <h4>Premalinks</h4>
+                <ul class="premalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footr_5"><div class="footer_4">
+                <h4>Contact</h4>
+                <div>
+                    <p>+91 7894205764</p>
+                    <p>vijaymakkad0104@gmail.com</p>
+                    <p>alt: vm2241@srmist.edu.in</p>
+                </div>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/user._.doesnotexisttt/"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="https://github.com/VijayMakkad"><i class="uil uil-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/vijay-makkad-1573681b3/"><i
+                                class="uil uil-linkedin-alt"></i></a></li>
+
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

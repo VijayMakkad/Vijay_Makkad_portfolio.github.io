@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Makkad-portfolio</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(12, 1, 30);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: transparent;
+            transition: background-color 0.35s ease-in-out;
+            z-index: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(155, 155, 238);
+            text-decoration: underline;
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 50px 84px;
+        }
+
+        .left {
+            font-size: 1.75rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(154, 75, 238);
+        }
+
+        #element {
+            color: rgb(161, 90, 236);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection {
+            max-width: 88vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.7rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 71px;
+            position: relative;
+            top: -39px;
+            left: -30px;
+        }
+
+        .image-top1 {
+            width: 50px;
+            position: relative;
+            top: -55px;
+            left: -25px;
+        }
+
+        .image-top2 {
+            width: 100px;
+            position: relative;
+            top: -35px;
+            left: -25px;
+        }
+
+        .vertical-title1 {
+            position: relative;
+            top: 40px;
+            width: 150px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 60px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .vertical-desc1 {
+            position: relative;
+            top: 64px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .vertical-desc2 {
+            position: relative;
+            top: 118px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .vertical-desc3 {
+            position: relative;
+            top: 65px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background: rgb(19, 1, 44);
+            padding-top: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+        .footer_container {
+            display: flex;
+            gap: 30rem;
+        }
+
+        .footer_container>div h4 {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer_1 p {
+            margin: 0 0 2rem;
+        }
+
+        footer ul li {
+            margin: 0.7rem;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer_4 {
+            position: relative;
+        }
+
+        .footer_socials {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footr_5 {
+            justify-content: end;
+        }
+
+        .contact-section {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .show-contact {
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vijay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#contact" class="scroll-to-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hey, My name is Vijay <span class="purple">Makkad</span>
+                <div>I am a Passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="./bg.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">Some of my accomplishments</span>
+            <h1>Achievements</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <a href="https://sirs.edu.in/"><img src="school.png" alt="" class="image-top"></a>
+                    <div class="vertical-title">
+                        SCHOOL
+                    </div>
+                    <div class="vertical-desc">
+                        Achieved excellence with a remarkable 96% in 10th and 97% in 12th grades. Successfully cleared
+                        the NTSE 1st round. Earned a gold medal in Ken Ken and abacus examination, showcasing
+                        intellectual prowess and dedication to academic and problem-solving endeavors.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <a href="https://www.srmist.edu.in/">
+                        <img src="./Srmseal.png" alt="" class="image-top1"></a>
+                    <div class="vertical-title1">
+                        COLLEGE
+                    </div>
+                    <div class="vertical-desc1">
+                        Thriving at SRM University as a 2nd-year student, I've excelled with a stellar academic record.
+                        Achieved a remarkable 9.55 CGPA in the 1st semester and raised the bar with a 9.71 CGPA in the
+                        2nd semester, culminating in an outstanding 9.63 overall first-year CGPA.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="./hackthon.jpg" alt="" class="image-top1">
+                    <div class="vertical-title1">
+                        HACKATHONS
+                    </div>
+                    <div class="vertical-desc1">
+                        Engaged in the vibrant realm of hackathons, I showcased my skills by participating in three
+                        events. Notably, I emerged as a finalist in one of SRM University's hackathons and further
+                        demonstrated my prowess in an online hackathon hosted by InnovateandEducate.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <a href="https://leetcode.com/vijay_makkad/"><img src="./leet.png" alt=""
+                            class="image-top2"></a>
+                    <div class="vertical-title">
+                        CODING PLATFORMS
+                    </div>
+                    <div class="vertical-desc3">
+                        A coding virtuoso with around 50 problems conquered on LeetCode. Holds prestigious gold badges
+                        in C++, C, and Python on HackerRank. Stands tall with a formidable rating of 470 on Codeforces,
+                        showcasing prowess in competitive programming.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="./extra.jpg" alt="" class="image-top1">
+                    <div class="vertical-title1">
+                        EXTRA CURRICULAR
+                    </div>
+                    <div class="vertical-desc3">
+                        A versatile athlete with triumphs at the district level in football, badminton, and swimming.
+                        Elevated to the state level in football. Contributed skills to SRM University's inter-hostel
+                        football competition, demonstrating prowess across multiple sports arenas.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer_container">
+            <div class="footer_1">
+                <a href="index.html">
+                    <h3>Vijay Makkad's Portfolio</h3>
+                </a>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="premalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <footer id="contact" class="footer contact-section">
+                <div class="footr_5">
+                    <div class="footer_4">
+                        <h4>Contact</h4>
+                        <div class="creds">
+                            <p>+91 7894205764</p>
+                            <p>vijaymakkad0104@gmail.com</p>
+                            <p>alt: vm2241@srmist.edu.in</p>
+                        </div>
+                        <ul class="footer_socials">
+                            <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/user._.doesnotexisttt/"><i
+                                        class="uil uil-instagram-alt"></i></a></li>
+                            <li><a href="https://github.com/VijayMakkad"><i class="uil uil-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/vijay-makkad-1573681b3/"><i
+                                        class="uil uil-linkedin-alt"></i></a></li>
+
+                        </ul>
+                    </div>
+            </footer>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        for(let i=0;i<1;i++){
+        var typed = new Typed('#element', {
+            strings: ['Student.', 'Web Developer.', 'Competitive Programmer.'],
+            typeSpeed: 50,
+        });
+    }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var contactLink = document.querySelector('.scroll-to-contact');
+            var contactSection = document.querySelector('.contact-section');
+            var navBar = document.querySelector('nav');
+
+            contactLink.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                contactSection.scrollIntoView({ behavior: "smooth" });
+
+                setTimeout(function () {
+                    contactSection.classList.add('show-contact');
+                }, 500);
+            });
+
+            window.addEventListener("scroll", function () {
+                var scrollPosition = window.scrollY;
+
+                if (scrollPosition > 50) {
+                    navBar.style.backgroundColor = 'rgb(20, 2, 50)';
+                } else {
+                    navBar.style.backgroundColor = 'transparent';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
